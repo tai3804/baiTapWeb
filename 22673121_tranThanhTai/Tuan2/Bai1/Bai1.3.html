@@ -107,36 +107,39 @@
 </html>
 
 <script>
-    var readMore = document.querySelector(".meeting-more");
-    var launchMore = document.querySelector(".launch-more");
+    var meetingMore = document.querySelector(".meeting-more");    
     var meetingText = document.querySelector(".meeting-more-text");
     var meetingShowLeft = document.querySelector(".meeting-show-left");
 
-    readMore.addEventListener("click", function(){
-        meetingText.classList.remove("hidden");
-        readMore.classList.add("hidden");
-        meetingShowLeft.classList.remove("hidden");
-    })
-
-    meetingShowLeft.addEventListener("click", function(){
-        meetingText.classList.add("hidden");
-        readMore.classList.remove("hidden");
-        meetingShowLeft.classList.add("hidden");
-    })
-
-    
+    var launchMore = document.querySelector(".launch-more");
     var launchText = document.querySelector(".launch-more-text");
     var launchShowLeft = document.querySelector(".launch-show-left");
 
-    launchMore.addEventListener("click", function(){
-        launchText.classList.remove("hidden");
-        launchMore.classList.add("hidden");
-        launchShowLeft.classList.remove("hidden");
+    function showText(more, text, hide) {
+        more.classList.add("hidden");
+        text.classList.remove("hidden");
+        hide.classList.remove("hidden");
+    }
+
+    function hideText(more, text, hide) {
+        more.classList.remove("hidden");
+        text.classList.add("hidden");
+        hide.classList.add("hidden");
+    }
+
+    meetingMore.addEventListener("click", function() {
+        showText(meetingMore, meetingText, meetingShowLeft);
     })
 
-    launchShowLeft.addEventListener("click", function(){
-        launchText.classList.add("hidden");
-        launchMore.classList.remove("hidden");
-        launchShowLeft.classList.add("hidden");
+    meetingShowLeft.addEventListener("click", function() {
+        hideText(meetingMore, meetingText, meetingShowLeft);
+    })
+
+    launchMore.addEventListener("click", function() {
+        showText(launchMore, launchText, launchShowLeft);
+    })
+
+    launchShowLeft.addEventListener("click", function() {
+        hideText(launchMore, launchText, launchShowLeft);
     })
 </script>
