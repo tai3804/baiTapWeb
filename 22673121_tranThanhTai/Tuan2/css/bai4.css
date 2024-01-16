@@ -1,0 +1,58 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.margin-bot-32 {
+    margin-bottom: 32px;
+}
+
+.container {
+    padding-right: 32px;
+}
+
+header {
+    background: url(../img/bai4/scraps.jpg) no-repeat right;
+    border-bottom: 2px solid tan;
+    width: 100%;
+    height: 72px;
+}
+
+
+aside {
+    float: left;
+    background: url(../img/bai4/back.jpg) repeat-y;
+    width: 200px;
+    padding-bottom: 128px;
+}
+
+aside a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    margin-left: 12px;
+    width: 150px;
+    border-bottom: 1.3px dashed sienna;
+}
+
+.basic {
+    display: block;
+    float: right;
+    border: 4px  outset goldenrod;
+    width: 280px;
+    padding-bottom: 16px;
+}
+
+.basic h2 {
+    padding: 16px 0;
+    color: goldenrod;
+}
+
+.basic li {
+    margin-left: 44px;
+}
