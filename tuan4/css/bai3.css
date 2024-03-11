@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    border-bottom: 4px double #999;
+}
+
+.header h1 {
+    display: block;
+    width: 100%;
+    background-color: rgb(203, 96, 51);
+    color: goldenrod;
+    text-shadow: -4px -4px 6px rgba(255, 255, 255);
+    border-bottom: 1px solid black;
+    padding: 16px;
+}
+
+.header li {
+    list-style: none;
+    display: inline-block;
+}
+
+.header a {
+    color: rgb(203, 96, 51);
+}
+
+.line {
+    background: url(../img/bai3/line.png) repeat-x;
+    height: 256px;
+}
+
+/*~~~~conten~~~~*/
+.content {
+    border-right: 1px solid #999;
+
+}
+.content h1 {
+    color: rgb(134, 134, 13);
+}
+
+.content p {
+    color: rgb(166, 166, 15);
+    text-align: justify;
+    padding: 32px;
+}
+
+.content form {
+    margin-left: 24px;
+}
+
+.content input {
+    border: 0;
+    border-bottom: 1px solid #999;
+    display: block;
+    margin-bottom: 32px;
+}
+
+.content button {
+    background-color: rgb(134, 134, 13);
+    padding: 4px 16px;
+    border-radius: 4px;
+}
+
+/*~~~~right~~~~*/
+
+.right {
+    padding: 0 8px 0 64px;
+}
+
+.right h1 {
+    color: rgb(107, 37, 14);
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.right-header {
+    background-color: rgb(247, 225, 190);
+    margin: auto;
+    padding-left: 32px;
+    border-radius: 32px 32px 0 0;
+    margin-right: 32px;
+}
+
+.right-header li{
+    list-style: square;
+    color: rgb(107, 37, 14);
+}
+
+.right ul {
+    padding-left: 32px;
+}
+
+.right a {
+    color: rgb(203, 96, 51);
+}
+
+.right-body {
+    margin-top: 16px;
+    padding: 0 32px;
+}
+
+.img-space {
+    width: 150px;
+    border: 1px solid #999;
+    padding: 12px;
+    float: left;
+    margin-right: 8px;
+}
+
+.img-space img {
+    width: 100%;
+    display: block;
+}
+
+.right-body p {
+    text-align: justify;
+}
+
+/*~~~~footer~~~~*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.footer .left img,
+.footer .right img {
+    display: block;
+    width: 64px;
+}
+
+.footer .mid {
+    background: url(../img/bai3/footer.png) repeat-x;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    text-align: center;
+    padding-top: 32px;
+}
